@@ -1,10 +1,10 @@
 # OpenClaw Launch skills
 
-Agent skills for [OpenClaw Launch](https://openclawlaunch.com/build-and-resell?utm_source=github&utm_medium=skill&utm_campaign=openclaw-launch-skill), the managed host for OpenClaw and Hermes agents.
+Agent skills for [OpenClaw Launch](https://openclawlaunch.com/build-and-resell?utm_source=github&utm_medium=skill&utm_campaign=openclawlaunch-skill), the managed host for OpenClaw and Hermes agents.
 
 | Skill | What it does |
 | --- | --- |
-| [`openclaw-launch`](skills/openclaw-launch/SKILL.md) | Deploy and manage hosted OpenClaw or Hermes bots from your coding agent: create a bot, check status, chat with it, connect Telegram, start, stop, restart or delete it. |
+| [`openclawlaunch`](skills/openclawlaunch/SKILL.md) | Deploy and manage hosted OpenClaw or Hermes bots from your coding agent: create a bot, check status, chat with it, connect Telegram, start, stop, restart or delete it. |
 
 Works with Claude Code, Codex, OpenClaw, Hermes and any agent that reads `SKILL.md` files. Instruction-only: no scripts, no binaries, just `curl` against the documented API.
 
@@ -19,24 +19,24 @@ npx skills add zackchewa/openclawlaunch-skills
 ClawHub (OpenClaw):
 
 ```bash
-clawhub install openclaw-launch
+clawhub install openclawlaunch
 ```
 
-Manual: copy `skills/openclaw-launch/` into your agent's skills folder, for example `~/.claude/skills/` (Claude Code), `~/.openclaw/workspace/skills/` (OpenClaw) or `~/.hermes/skills/` (Hermes).
+Manual: copy `skills/openclawlaunch/` into your agent's skills folder, for example `~/.claude/skills/` (Claude Code), `~/.openclaw/workspace/skills/` (OpenClaw) or `~/.hermes/skills/` (Hermes).
 
 ## Setup
 
-1. Sign in at [openclawlaunch.com/developer](https://openclawlaunch.com/developer?utm_source=github&utm_medium=skill&utm_campaign=openclaw-launch-skill) and create a new API key just for your agent.
+1. Sign in at [openclawlaunch.com/developer](https://openclawlaunch.com/developer?utm_source=github&utm_medium=skill&utm_campaign=openclawlaunch-skill) and create a new API key just for your agent.
 2. Set it in your shell or agent config, not in the chat:
 
    ```bash
    export OPENCLAW_LAUNCH_API_KEY=sk_live_...
    ```
 
-   For OpenClaw you can instead set `skills.entries["openclaw-launch"].apiKey` in `openclaw.json`.
+   For OpenClaw you can instead set `skills.entries["openclawlaunch"].apiKey` in `openclaw.json`.
 3. Ask your agent something like "deploy an OpenClaw bot called Support Bot on OpenClaw Launch and say hi to it".
 
-Creating bots needs a Build & Resell plan or a Scale prepaid balance. On Scale, OpenClaw bots also need model funding (a free Agnes key or an OpenRouter provisioning key) set under Build & Resell; Hermes bots come with model access billed to the account. See [pricing](https://openclawlaunch.com/build-and-resell?utm_source=github&utm_medium=skill&utm_campaign=openclaw-launch-skill).
+Creating bots needs a Build & Resell plan or a Scale prepaid balance. On Scale, OpenClaw bots also need model funding (a free Agnes key or an OpenRouter provisioning key) set under Build & Resell; Hermes bots come with model access billed to the account. See [pricing](https://openclawlaunch.com/build-and-resell?utm_source=github&utm_medium=skill&utm_campaign=openclawlaunch-skill).
 
 ## Security
 

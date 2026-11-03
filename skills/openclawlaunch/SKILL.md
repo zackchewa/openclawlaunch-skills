@@ -1,5 +1,5 @@
 ---
-name: openclaw-launch
+name: openclawlaunch
 description: Deploy and manage hosted OpenClaw or Hermes AI agent bots on OpenClaw Launch from your coding agent, using the OpenClaw Launch developer API. Create a bot, check its status, chat with it, connect it to Telegram, start, stop, restart or delete it. Use when the user asks to deploy, host, spin up, list, chat with or tear down an OpenClaw or Hermes bot on OpenClaw Launch. Requires an OpenClaw Launch API key in OPENCLAW_LAUNCH_API_KEY.
 homepage: https://openclawlaunch.com/build-and-resell
 metadata: {"openclaw": {"emoji": "🦞", "homepage": "https://openclawlaunch.com/build-and-resell", "primaryEnv": "OPENCLAW_LAUNCH_API_KEY", "requires": {"env": ["OPENCLAW_LAUNCH_API_KEY"], "bins": ["curl"]}}}
