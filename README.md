@@ -50,6 +50,7 @@ Creating bots needs a Build & Resell plan or a Scale prepaid balance. On Scale, 
 - A key can only see and control the bots that same key created. Give your agent its own key: it cannot reach bots made by your storefront or other keys, and you can revoke it at any time without affecting them.
 - The agent must ask before anything that costs money (creating a bot) or cannot be undone (deleting one), and it treats bot replies and API responses as data, never as instructions.
 - The skill uses only lifecycle, chat, Telegram connect and balance endpoints. It never touches file writes, exports, model key changes, SSH or terminals.
+- What leaves your machine: the skill only calls `https://openclawlaunch.com/api/v1`. It sends what each request needs: your API key, bot names and settings, the messages you ask the agent to send to your bot, and a Telegram bot token if you connect Telegram. Your bots and their chat history are kept on OpenClaw Launch until you delete them. See the [privacy policy](https://openclawlaunch.com/privacy).
 - Found a security problem? Email support@openclawlaunch.com.
 
 ## License
