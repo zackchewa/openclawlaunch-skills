@@ -10,6 +10,12 @@ Works with Claude Code, Codex, OpenClaw, Hermes and any agent that reads `SKILL.
 
 ## Install
 
+Claude Code plugin:
+
+```bash
+/plugin install openclawlaunch --marketplace zackchewa/openclawlaunch-skills
+```
+
 skills.sh (Claude Code, Codex, Cursor and others):
 
 ```bash

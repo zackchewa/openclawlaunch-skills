@@ -1,0 +1,15 @@
+{
+  "name": "openclawlaunch",
+  "description": "OpenClaw Launch plugins: deploy and manage hosted OpenClaw and Hermes agent bots from Claude Code.",
+  "owner": {
+    "name": "OpenClaw Launch",
+    "email": "support@openclawlaunch.com"
+  },
+  "plugins": [
+    {
+      "name": "openclawlaunch",
+      "source": "./",
+      "description": "Deploy and manage hosted OpenClaw and Hermes AI agent bots on OpenClaw Launch from Claude Code."
+    }
+  ]
+}
