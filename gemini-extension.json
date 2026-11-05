@@ -1,0 +1,5 @@
+{
+  "name": "openclawlaunch",
+  "version": "1.0.0",
+  "description": "Deploy and manage hosted OpenClaw and Hermes AI agent bots on OpenClaw Launch: create a bot, check status, chat with it, connect Telegram, start, stop, restart or delete it."
+}

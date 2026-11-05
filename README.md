@@ -6,7 +6,7 @@ Agent skills for [OpenClaw Launch](https://openclawlaunch.com/build-and-resell?u
 | --- | --- |
 | [`openclawlaunch`](skills/openclawlaunch/SKILL.md) | Deploy and manage hosted OpenClaw or Hermes bots from your coding agent: create a bot, check status, chat with it, connect Telegram, start, stop, restart or delete it. |
 
-Works with Claude Code, Codex, OpenClaw, Hermes and any agent that reads `SKILL.md` files. Instruction-only: no scripts, no binaries, just `curl` against the documented API.
+Works with Claude Code, Codex, Gemini CLI, OpenClaw, Hermes and any agent that reads `SKILL.md` files. Instruction-only: no scripts, no binaries, just `curl` against the documented API.
 
 ## Install
 
@@ -20,6 +20,12 @@ skills.sh (Claude Code, Codex, Cursor and others):
 
 ```bash
 npx skills add zackchewa/openclawlaunch-skills
+```
+
+Gemini CLI extension:
+
+```bash
+gemini extensions install https://github.com/zackchewa/openclawlaunch-skills
 ```
 
 ClawHub (OpenClaw):
