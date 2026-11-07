@@ -6,7 +6,7 @@ Agent skills for [OpenClaw Launch](https://openclawlaunch.com/build-and-resell?u
 | --- | --- |
 | [`openclawlaunch`](skills/openclawlaunch/SKILL.md) | Deploy and manage hosted OpenClaw or Hermes bots from your coding agent: create a bot, check status, chat with it, connect Telegram, start, stop, restart or delete it. |
 
-Works with Claude Code, Codex, Gemini CLI, OpenClaw, Hermes and any agent that reads `SKILL.md` files. Instruction-only: no scripts, no binaries, just `curl` against the documented API.
+Works with Claude Code, Codex, Gemini CLI, DeepSeek Harness, OpenClaw, Hermes and any agent that reads `SKILL.md` files. Instruction-only: no scripts, no binaries, just `curl` against the documented API.
 
 ## Install
 
@@ -28,13 +28,19 @@ Gemini CLI extension:
 gemini extensions install https://github.com/zackchewa/openclawlaunch-skills
 ```
 
+DeepSeek Harness (installs to `~/.agents/skills`, which Harness reads):
+
+```bash
+npx skills add zackchewa/openclawlaunch-skills -a universal -g
+```
+
 ClawHub (OpenClaw):
 
 ```bash
 clawhub install openclawlaunch
 ```
 
-Manual: copy `skills/openclawlaunch/` into your agent's skills folder, for example `~/.claude/skills/` (Claude Code), `~/.openclaw/workspace/skills/` (OpenClaw) or `~/.hermes/skills/` (Hermes).
+Manual: copy `skills/openclawlaunch/` into your agent's skills folder, for example `~/.claude/skills/` (Claude Code), `~/.agents/skills/` (DeepSeek Harness), `~/.openclaw/workspace/skills/` (OpenClaw) or `~/.hermes/skills/` (Hermes).
 
 ## Setup
 
