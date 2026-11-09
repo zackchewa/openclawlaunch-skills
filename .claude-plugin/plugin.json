@@ -1,14 +1,14 @@
 {
   "name": "openclawlaunch",
   "displayName": "OpenClaw Launch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deploy and manage hosted OpenClaw and Hermes AI agent bots on OpenClaw Launch: create a bot, check status, chat with it, connect Telegram, start, stop, restart or delete it.",
   "author": {
     "name": "OpenClaw Launch",
     "email": "support@openclawlaunch.com",
     "url": "https://openclawlaunch.com"
   },
-  "homepage": "https://openclawlaunch.com/build-and-resell",
+  "homepage": "https://openclawlaunch.com/build-and-resell?utm_source=skill-listing&utm_medium=listing&utm_campaign=openclawlaunch-skill",
   "repository": "https://github.com/zackchewa/openclawlaunch-skills",
   "license": "MIT",
   "keywords": [

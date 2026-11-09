@@ -1,13 +1,13 @@
 ---
 name: openclawlaunch
 description: Deploy and manage hosted OpenClaw or Hermes AI agent bots on OpenClaw Launch from your coding agent, using the OpenClaw Launch developer API. Create a bot, check its status, chat with it, connect it to Telegram, start, stop, restart or delete it. Use when the user asks to deploy, host, spin up, list, chat with or tear down an OpenClaw or Hermes bot on OpenClaw Launch. Requires an OpenClaw Launch API key in OPENCLAW_LAUNCH_API_KEY.
-homepage: https://openclawlaunch.com/build-and-resell
-metadata: {"openclaw": {"emoji": "🦞", "homepage": "https://openclawlaunch.com/build-and-resell", "primaryEnv": "OPENCLAW_LAUNCH_API_KEY", "requires": {"env": ["OPENCLAW_LAUNCH_API_KEY"], "bins": ["curl"]}}}
+homepage: https://openclawlaunch.com/build-and-resell?utm_source=skill-listing&utm_medium=listing&utm_campaign=openclawlaunch-skill
+metadata: {"openclaw": {"emoji": "🦞", "homepage": "https://openclawlaunch.com/build-and-resell?utm_source=skill-listing&utm_medium=listing&utm_campaign=openclawlaunch-skill", "primaryEnv": "OPENCLAW_LAUNCH_API_KEY", "requires": {"env": ["OPENCLAW_LAUNCH_API_KEY"], "bins": ["curl"]}}}
 ---
 
 # OpenClaw Launch
 
-[OpenClaw Launch](https://openclawlaunch.com) hosts OpenClaw and Hermes agents as managed bots. This skill drives its developer API (the same API behind Build & Resell storefronts) with plain `curl`.
+[OpenClaw Launch](https://openclawlaunch.com/?utm_source=skill&utm_medium=agent&utm_campaign=openclawlaunch-skill) hosts OpenClaw and Hermes agents as managed bots. This skill drives its developer API (the same API behind Build & Resell storefronts) with plain `curl`.
 
 Base URL: `https://openclawlaunch.com/api/v1`
 
@@ -19,7 +19,7 @@ Environment variables:
 
 The API key is read from `OPENCLAW_LAUNCH_API_KEY` and nowhere else.
 
-- If it is not set, stop and tell the user: create a NEW key just for this agent at https://openclawlaunch.com/developer, then set it in their own shell or agent config (for example `export OPENCLAW_LAUNCH_API_KEY=...`). Do not ask them to paste the key into the chat, and do not write it into any file yourself.
+- If it is not set, stop and tell the user: create a NEW key just for this agent at https://openclawlaunch.com/developer?utm_source=skill&utm_medium=agent&utm_campaign=openclawlaunch-skill (sign in or sign up first). A new account's first developer key comes with a one-time $1 credit and needs no card, which is enough to create and try a first bot. Then set it in their own shell or agent config (for example `export OPENCLAW_LAUNCH_API_KEY=...`). Do not ask them to paste the key into the chat, and do not write it into any file yourself.
 - Recommend a dedicated key even if the user already has one. A key can only see and control the bots that same key created, so an agent-only key cannot reach bots made by the user's storefront or other keys, and revoking it never disrupts them. It does share the account's balance, plan limits and model funding (see "What a key can cost").
 - Never print, echo, log or summarize the key, never write it to a file, a commit, an issue or a bot message, never send it to any host other than `openclawlaunch.com`, and never run these commands with `set -x`, `curl -v` or `--trace`.
 
@@ -51,8 +51,8 @@ That is also the read-only check that the key works. `401 unauthorized` means th
 
 ## What a key can cost
 
-- Creating a bot needs an active Build & Resell plan or a Scale prepaid balance on the account.
-- On Scale, OpenClaw bots also need model funding chosen under Build & Resell at https://openclawlaunch.com/developer: a free Agnes key or an OpenRouter provisioning key. Without it the create fails with one of the `400` funding errors below.
+- Creating a bot needs an active Build & Resell plan or a Scale prepaid balance on the account. A new account's first developer key adds a one-time $1 Scale credit, enough to try one bot without a card.
+- On Scale, OpenClaw bots also need model funding chosen under Build & Resell at https://openclawlaunch.com/developer?utm_source=skill&utm_medium=agent&utm_campaign=openclawlaunch-skill: a free Agnes key or an OpenRouter provisioning key. Without it the create fails with one of the `400` funding errors below.
 - Hermes bots come with model access. On Scale, what they use is billed to the prepaid balance.
 - On a monthly plan, bots are included up to the plan's bot limit. On Scale, hosting is billed hourly from the moment a bot is created (`GET /balance` shows the current rates). Stopping a bot does not stop that billing; only deleting it does.
 - If the user turned on auto-reload, a low Scale balance can charge their card. So even an agent-only key can spend the account's money up to its bot limit. That is why rule 1 exists.
@@ -156,5 +156,5 @@ Returns `{"data": {"id": "...", "deleted": true}}`.
 
 - Bots made through the API are managed through the API (and any Build & Resell storefront built on it), not the regular openclawlaunch.com dashboard.
 - Scale balance and current hosting rates: `GET /balance`.
-- Plans and pricing: https://openclawlaunch.com/build-and-resell
-- Revoke a key any time at https://openclawlaunch.com/developer. If a key may have leaked, revoke it first and make a new one.
+- Plans and pricing: https://openclawlaunch.com/build-and-resell?utm_source=skill&utm_medium=agent&utm_campaign=openclawlaunch-skill
+- Revoke a key any time at https://openclawlaunch.com/developer?utm_source=skill&utm_medium=agent&utm_campaign=openclawlaunch-skill. If a key may have leaked, revoke it first and make a new one.
